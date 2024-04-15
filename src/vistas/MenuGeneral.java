@@ -51,6 +51,8 @@ public class MenuGeneral extends javax.swing.JFrame {
         jmiPorPrecio = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setLocationByPlatform(true);
+        setPreferredSize(new java.awt.Dimension(840, 620));
 
         escritorio.setPreferredSize(new java.awt.Dimension(1350, 650));
 
@@ -131,7 +133,6 @@ public class MenuGeneral extends javax.swing.JFrame {
           GestionDeProductos gdp=new GestionDeProductos(productos);
           gdp.setVisible(true);
           escritorio.add(gdp);
-          gdp.setLocation(450, 150);
          
     }//GEN-LAST:event_jmiProductosActionPerformed
 
@@ -141,7 +142,6 @@ public class MenuGeneral extends javax.swing.JFrame {
        ConsultaPorRubro cpr=new ConsultaPorRubro(productos);
        cpr.setVisible(true);
        escritorio.add(cpr);
-       cpr.setLocation(450, 150);
        
     }//GEN-LAST:event_jmiPorRubroActionPerformed
 
@@ -151,7 +151,6 @@ public class MenuGeneral extends javax.swing.JFrame {
        ConsultaPorNombre cpr=new ConsultaPorNombre(productos);
        cpr.setVisible(true);
        escritorio.add(cpr);
-       cpr.setLocation(450, 150);
     }//GEN-LAST:event_jmiPorNombreActionPerformed
 
     private void jmiPorPrecioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jmiPorPrecioActionPerformed
@@ -160,7 +159,6 @@ public class MenuGeneral extends javax.swing.JFrame {
        ConsultaPorPrecio cpr=new ConsultaPorPrecio(productos);
        cpr.setVisible(true);
        escritorio.add(cpr);
-       cpr.setLocation(450, 150);
     }//GEN-LAST:event_jmiPorPrecioActionPerformed
     
     /**
